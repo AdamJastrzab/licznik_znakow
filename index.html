@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+    fieldset {
+        border: 0;
+        background: rgb(80, 99, 117);
+        width: 500px;
+        margin: auto;
+        color: white;
+    }
+
+    textarea {
+        background-color:aliceblue;
+    }
+
+    button {
+        color: white;
+        background-color: rgb(119, 119, 209);
+        text-align: center;
+        border: 1.5px solid rgb(90, 92, 112);
+        font-weight: bolder;
+    }
+    
+    button:hover {
+        background-color: rgb(51, 116, 180);
+        cursor: pointer;
+        color: black;
+
+    }
+
+    #licznik {
+        float: right;
+    }
+    </style>
+    
+    
+
+</head>
+<body>
+
+    <form>
+        <fieldset class="fieldset">
+            <div class="field">
+                <label for="sms">Wiadomość:</label>
+                <textarea rows="20" cols="100" id="sms"></textarea>
+            </div>
+            <div class="field">
+                <button type="button">Wyślij wiadomość</button>
+                <div id="licznik">Licznik użytych znaków: 0 </div>
+            </div>
+        </fieldset>
+    </form>
+
+
+<script src="skrypt.js"> </script>
+
+</body>
+</html>
